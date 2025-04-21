@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTA Housing Data</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script defer src="script.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>GTA Housing Market</h1>
+    </header>
+    
+    <section id="hero">
+        <h2>Housing Data in the GTA</h2>
+        <input type="text" placeholder="Search by city or postal code...">
+    <button>Search</button>
+</section>
+
+<section class="grid-container">
+    <div class="col-3">
+        <h2>Greater Toronto Area</h2>
+        <h3>December 2024</h3>
+        <ul class="list-group">
+            <li class="list-group-item"><span class="ellipse blue-50"></span>$750k to $830k</li>
+            <li class="list-group-item"><span class="ellipse blue-75"></span>$830k to $940k</li>
+            <li class="list-group-item"><span class="ellipse blue-100"></span>$940k to $1.0M</li>
+            <li class="list-group-item"><span class="ellipse red-50"></span>$1.0M to $1.1M</li>
+            <li class="list-group-item"><span class="ellipse red-75"></span>$1.1M to $1.3M</li>
+            <li class="list-group-item"><span class="ellipse red-100"></span>$1.3M to $2.8M</li>
+        </ul>
+          <canvas id="myChart" width="200" height="200"></canvas>
+    </div>
+    <div class="col-6">
+        <section id="map" style="height: 800px; width: 800px;"></section>
+    </div>
+    <div class="col-3">
+       <canvas id="mySecondChart" width="400" height="400"></canvas>
+    </div>
+</section>
+</body>
+</html> 
